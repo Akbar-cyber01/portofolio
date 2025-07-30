@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ==========================================
+                  Box Icons
+    =========================================== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- ==========================================
+                  Custom CSS
+    =========================================== -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- ==========================================
+                  Breakpoint
+    =========================================== -->
+    <link rel="stylesheet" href="breakpoint.css" />
+    <title>Portfolio - Akbar</title>
+  </head>
+  <body>
+      <!-- ==========================================
+                      Header
+      =========================================== -->
+      <header class="header">
+        <a href="#" class="logo">My<span>Portfolio.</span></a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav class="navbar">
+          <a href="#home" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#gallery">Galeri</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+    <!-- ==========================================
+                  Home Section
+    =========================================== -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>M. Khobari Akbar</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <div class="social-media">
+          <a href="https://www.facebook.com/share/1JPfjtDMz5/?mibextid=wwXIfr" target="_blank" title="Facebook">
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a href="https://www.tiktok.com/@_muhammadka?_t=ZS-8yHBjy9ER5E&_r=1" target="_blank" title="Twitter">
+            <i class="bx bxl-tiktok"></i>
+          </a>
+          <a href="https://www.instagram.com/mhmmadkhobari_a" target="_blank" title="Instagram">
+            <i class="bx bxl-instagram-alt"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/Mkhobariakbar" target="_blank" title="LinkedIn">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+        </div>
+        <!-- add link for your CV into `href` -->
+        <a href="" class="btn">Download CV</a>
+      </div>
+      <div class="home-img">
+        <img src="assets/image/logo1.png" alt="home" />
+      </div>
+    </section>
+
+    <!-- ==========================================
+                  About Section
+    =========================================== -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="assets/image/logo1.png" alt="about" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <p>Saya, M. Khobari Akbar, merupakan fresh graduate program studi Sistem Informasi yang memiliki ketertarikan besar di bidang pengembangan teknologi, khususnya dalam pengembangan aplikasi berbasis web dan mobile.
+        Sejak awal perkuliahan, saya aktif mengerjakan berbagai proyek berbasis Website menggunakan framework CodeIgniter 4.
+        Selain itu, saya juga terpilih sebagai salah satu awardee BSI Scholarship: Inspirasi Batch 2 dan Bank Indonesia , sebuah program pengembangan kepemimpinan dan karakter yang membentuk saya menjadi pribadi yang lebih disiplin, bertanggung jawab,
+        dan memiliki semangat tinggi dalam berkontribusi bagi masyarakat. Dengan kombinasi antara kemampuan teknis dan pengembangan soft skill tersebut, saya terus berupaya menjadi pribadi yang adaptif, solutif, dan siap menghadapi tantangan di dunia profesional.
+      </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <!-- ==========================================     Tabbed Content Section     =========================================== -->
+    <section class="tab-section" id="portfolio">
+      <h2 class="heading">My <span>Highlights</span></h2>
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="projects">Project</button>
+          <button class="tab-btn" data-tab="certificates">Certificate</button>
+          <button class="tab-btn" data-tab="gallery">Gallery</button> <!-- tab gallery baru -->
+        </div>
+        <div class="tab-content">
+          <!-- Project Content -->
+          <div id="projects" class="tab-panel active">
+            <div class="portfolio-container">
+              <div class="portfolio-box">
+                <img src="assets/image/project1.png" alt="portfolio" />
+                <div class="portfolio-layer">
+                  <h4>Web Pegawai</h4>
+                  <p>Aplikasi Pegawai ini menampilkan struktur data pegawai di Dinas Kebudayaan dan Pariwisata Provinsi Jambi</p>
+                  <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+              </div>
+              <div class="portfolio-box">
+                <img src="assets/image/project2.png" alt="portfolio" />
+                <div class="portfolio-layer">
+                  <h4>Web Tiket</h4>
+                  <p>Website pemesanan tiket online berbasis sistem informasi.</p>
+                  <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+              </div>
+              <div class="portfolio-box">
+                <img src="assets/image/project3.png" alt="portfolio" />
+                <div class="portfolio-layer">
+                  <h4>Web Desa</h4>
+                  <p>Sistem informasi desa untuk keperluan administrasi dan pelayanan surat menyurat.</p>
+                  <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+              </div>
+              <div class="portfolio-box">
+                <img src="assets/image/project4.png" alt="portfolio" />
+                <div class="portfolio-layer">
+                  <h4>Web Perpustakaan</h4>
+                  <p>Sistem peminjaman buku dan pengelolaan anggota perpustakaan digital.</p>
+                  <a href="#"><i class="bx bx-link-external"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Certificate Content -->
+          <div id="certificates" class="tab-panel">
+            <div class="certificate-container">
+              <div class="certificate-box">
+                <img src="assets/sertif/foto1.png" alt="Certificate Mahasiswa Berprestasi" />
+                <h3>Sertifikat Mahasiswa Berprestasi</h3>
+              </div>
+              <div class="certificate-box">
+                <img src="assets/sertif/foto2.png" alt="Certificate Duta Museum 2023" />
+                <h3>Sertifikat Duta Museum 2023</h3>
+              </div>
+              <div class="certificate-box">
+                <img src="assets/sertif/foto6.jpg" alt="Certificate Like IT" />
+                <h3>Sertifikat Like IT</h3>
+              </div>
+              <div class="certificate-box">
+                <img src="assets/sertif/foto3.png" alt="Certificate Duta Wisata Nasional 2023" />
+                <h3>Sertifikat Duta Wisata Nasional 2023</h3>
+              </div>
+              <div class="certificate-box">
+                <img src="assets/sertif/foto4.png" alt="Certificate Digital Marketing" />
+                <h3>Sertifikat Digital Marketing</h3>
+              </div>
+              <div class="certificate-box">
+                <img src="assets/sertif/foto5.png" alt="Certificate Office Applications" />
+                <h3>Sertifikat Office Applications</h3>
+              </div>
+            </div>
+          </div>
+          <!-- ==========================================
+                    Gallery Section
+          =========================================== -->
+          <div id="gallery" class="tab-panel">
+            <div class="gallery-container">
+              <div class="gallery-box">
+                <img src="assets/image/1.png" alt="Leadership Camp" />
+              </div>
+              <div class="gallery-box">
+                <img src="assets/image/2.png" alt="Master of Caremony" />
+              </div>
+              <div class="gallery-box">
+                <img src="assets/image/3.png" alt="Pemilihan Duta Museum" />
+              </div>
+              <div class="gallery-box">
+                <img src="assets/image/4.png" alt="On Duty Duta Museum" />
+              </div>
+              <div class="gallery-box">
+                <img src="assets/image/5.png" alt="Panitia SOSPEM" />
+              </div>
+              <div class="gallery-box">
+                <img src="assets/image/6.png" alt="BSI Goes To Campus" />
+              </div>
+              <div class="gallery-box">
+                <img src="assets/image/7.png" alt="Pemilihan Duta Wisata Nasional" />
+              </div>
+              <div class="gallery-box">
+                <img src="assets/image/8.png" alt="Top 5 Putera/Puteri Duta Wisata Nasional" />
+              </div>
+              <div class="gallery-box">
+                <img src="assets/image/9.png" alt="Podcast RRI Pro 2" />
+              </div>
+              <div class="gallery-box">
+                <img src="assets/image/10.png" alt="Leadership Camp GenBI Jambi x Palembang" />
+              </div>
+              <div class="gallery-box">
+                <img src="assets/image/11.png" alt="Kunjungan Disbudpar To Tvri Jambi" />
+              </div>
+              <div class="gallery-box">
+                <img src="assets/image/12.png" alt="Lomba Syarhil Qur'an" />
+              </div>
+              <div class="gallery-box">
+                <img src="assets/image/13.png" alt="On Duty Pemilihan Duta Wisata Jambi 2025" />
+              </div>
+              <div class="gallery-box">
+                <img src="assets/image/14.png" alt="BSI Goes To Campus" />
+              </div>
+              <div class="gallery-box">
+                <img src="assets/image/15.png" alt="Leadership Camp 2024" />
+              </div>
+              <div class="gallery-box">
+                <img src="assets/image/16.png" alt="Sertifikasi BNSP" />
+              </div>
+              <div class="gallery-box">
+                <img src="assets/image/17.png" alt="Sertifikasi BNSP" />
+              </div>
+              <div class="gallery-box">
+                <img src="assets/image/18.png" alt="Pertemuan Tahunan Bank Indonesia" />
+              </div>
+              <div class="gallery-box">
+                <img src="assets/image/19.png" alt="GenBI To Project" />
+              </div>
+            </div>
+          </div>
+        </div> <!-- Akhir dari services-container -->
+    </section>
+
+    <!-- SKILL SECTION -->
+    <section class="services" id="skill">
+      <h2 class="heading">My <span>Skills</span></h2>
+        <div class="services-container">
+          <!-- Reuse all skills box here -->
+          <div class="services-box">
+            <img src="assets/image/html5-color.svg" style="width: 60px; height: auto; margin-bottom: 1rem;" />
+              <h3>HTML</h3>
+              <p>HTML adalah bahasa markup yang digunakan untuk menyusun halaman web.</p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+              <img src="assets/image/css3-color.svg" style="width: 60px; height: auto; margin-bottom: 1rem;" />
+              <h3>CSS</h3>
+              <p>CSS digunakan untuk menambahkan gaya pada elemen HTML seperti warna, layout, dll.</p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+              <img src="assets/image/php-color.svg" style="width: 60px; height: auto; margin-bottom: 1rem;" />
+              <h3>PHP</h3>
+              <p>PHP adalah bahasa pemrograman backend yang umum digunakan untuk pengembangan website.</p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+              <img src="assets/image/powerpoint.png" style="width: 60px; height: auto; margin-bottom: 1rem;" />
+              <h3>Microsoft PowerPoint</h3>
+              <p>Digunakan untuk membuat presentasi yang menarik dan komunikatif.</p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+              <img src="assets/image/word.png" style="width: 60px; height: auto; margin-bottom: 1rem;" />
+              <h3>Microsoft Word</h3>
+              <p>Aplikasi pengolah kata populer untuk membuat dokumen teks.</p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+              <img src="assets/image/excel.png" style="width: 60px; height: auto; margin-bottom: 1rem;" />
+              <h3>Microsoft Excel</h3>
+              <p>Digunakan untuk pengolahan data, kalkulasi, grafik, dan visualisasi.</p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+              <img src="assets/image/canva.png" style="width: 60px; height: auto; margin-bottom: 1rem;" />
+              <h3>Design Canva</h3>
+              <p>Platform desain visual yang mudah digunakan untuk kebutuhan grafis.</p>
+              <a href="#" class="btn">Read More</a>
+            </div>
+          </div>
+        </section>
+
+    <!-- ==========================================
+                Contact Section
+    =========================================== -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+      <form id="whatsapp-form">
+        <div class="input-box">
+          <input type="text" id="name" placeholder="Full Name" required />
+          <input type="email" id="email" placeholder="Email Address" required />
+        </div>
+
+        <div class="input-box">
+          <input type="number" id="phone" placeholder="Mobile Number" required />
+          <input type="text" id="subject" placeholder="Email Subject" required />
+        </div>
+        <textarea
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+
+    <script>
+      document.getElementById("whatsapp-form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Mencegah form dari submit biasa
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value;
+
+        const fullMessage = `Halo! Saya ${name}%0AEmail: ${email}%0ANo HP: ${phone}%0ASubjek: ${subject}%0APesan: ${message}`;
+        const whatsappNumber = "6282179306443"; // Ganti 0 jadi 62 (kode negara Indonesia)
+
+        const whatsappLink = `https://wa.me/${whatsappNumber}?text=${fullMessage}`;
+
+        window.open(whatsappLink, "_blank");
+      });
+    </script>
+
+    <!-- ==========================================
+                    Footer
+    =========================================== -->
+    <footer class="footer">
+      <div class="footer-text" style="text-align: center;">
+        <p>Copyright &copy; 2025 by Akbar| All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <!-- ==========================================
+                  Scroll Reveal
+    =========================================== -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ==========================================
+                   Typed Js
+    =========================================== -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- ==========================================
+                  Custom Js
+    =========================================== -->
+    <script src="main.js"></script>
+
+    <!-- Popup Modal (Untuk Sertifikat & Galeri) -->
+    <div id="popup-modal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="popup-img" />
+      <div id="caption"></div>
+    </div>
+    <script>
+      const modal = document.getElementById("popup-modal");
+      const modalImg = document.getElementById("popup-img");
+      const captionText = document.getElementById("caption");
+      const closeBtn = document.getElementsByClassName("close")[0];
+
+      // Ambil semua gambar dari sertifikat dan galeri
+      const galleryImages = document.querySelectorAll(".certificate-box img, .gallery-box img");
+
+      galleryImages.forEach(img => {
+        img.addEventListener("click", () => {
+          modal.style.display = "block";
+          modalImg.src = img.src;
+          captionText.innerHTML = img.alt || img.nextElementSibling?.innerText || "";
+        });
+      });
+
+      // Tutup popup saat klik X
+      closeBtn.onclick = () => {
+        modal.style.display = "none";
+      };
+
+      // Tutup popup saat klik area luar
+      window.onclick = (event) => {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+    <script>
+      const tabButtons = document.querySelectorAll(".tab-btn");
+      const tabPanels = document.querySelectorAll(".tab-panel");
+
+      tabButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          // Hapus class 'active' dari semua tombol dan panel
+          tabButtons.forEach((b) => b.classList.remove("active"));
+          tabPanels.forEach((panel) => panel.classList.remove("active"));
+
+          // Tambahkan class 'active' ke tombol dan panel yang sesuai
+          btn.classList.add("active");
+          const target = document.getElementById(btn.dataset.tab);
+          if (target) {
+            target.classList.add("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
